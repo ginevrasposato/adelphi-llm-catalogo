@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6cfd0622dad775c3193f0efa31288e6c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6cfd0622dad775c3193f0efa31288e6c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6cfd0622dad775c3193f0efa31288e6c = L.map(
+                "map_6cfd0622dad775c3193f0efa31288e6c",
+                {
+                    center: [45.0, 15.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_15f5fb11e03d7d8f2266e8285cd9ff6d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_15f5fb11e03d7d8f2266e8285cd9ff6d.addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+            var circle_marker_ea1e0b335429ff84c695d98f82b44632 = L.circleMarker(
+                [50.4500336, 30.5241361],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_a47a8f229542e386f84a38fc6546aca7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dad8ff26d0197502ffa09b06c5c7e25c = $(`<div id="html_dad8ff26d0197502ffa09b06c5c7e25c" style="width: 100.0%; height: 100.0%;">Kiev: Irène Némirovsky (16 volumi)</div>`)[0];
+                popup_a47a8f229542e386f84a38fc6546aca7.setContent(html_dad8ff26d0197502ffa09b06c5c7e25c);
+            
+        
+
+        circle_marker_ea1e0b335429ff84c695d98f82b44632.bindPopup(popup_a47a8f229542e386f84a38fc6546aca7)
+        ;
+
+        
+    
+    
+            circle_marker_ea1e0b335429ff84c695d98f82b44632.bindTooltip(
+                `<div>
+                     Kiev
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dab66f9f72ee817df60d9e19e060108a = L.circleMarker(
+                [46.623943, 14.3075976],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_a44fa62f75cd69cc24d94b3820f95657 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_afb7ab30b892f0df37a68808daf7161c = $(`<div id="html_afb7ab30b892f0df37a68808daf7161c" style="width: 100.0%; height: 100.0%;">Klagenfurt: Ingeborg Bachmann (2 volumi)</div>`)[0];
+                popup_a44fa62f75cd69cc24d94b3820f95657.setContent(html_afb7ab30b892f0df37a68808daf7161c);
+            
+        
+
+        circle_marker_dab66f9f72ee817df60d9e19e060108a.bindPopup(popup_a44fa62f75cd69cc24d94b3820f95657)
+        ;
+
+        
+    
+    
+            circle_marker_dab66f9f72ee817df60d9e19e060108a.bindTooltip(
+                `<div>
+                     Klagenfurt
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2829cd3089b767520ee0015601c8ffe3 = L.circleMarker(
+                [54.05, -2.8],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_ccede14e35838c7e1a67f3442bafb9dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71f489d3923bdf975bdac2e13c417428 = $(`<div id="html_71f489d3923bdf975bdac2e13c417428" style="width: 100.0%; height: 100.0%;">Lancaster: Leonora Carrington (2 volumi)</div>`)[0];
+                popup_ccede14e35838c7e1a67f3442bafb9dd.setContent(html_71f489d3923bdf975bdac2e13c417428);
+            
+        
+
+        circle_marker_2829cd3089b767520ee0015601c8ffe3.bindPopup(popup_ccede14e35838c7e1a67f3442bafb9dd)
+        ;
+
+        
+    
+    
+            circle_marker_2829cd3089b767520ee0015601c8ffe3.bindTooltip(
+                `<div>
+                     Lancaster
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d01ce45b2201af3e06baaa513e26f26 = L.circleMarker(
+                [48.8588897, 2.320041],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_1b515d643729c8df6bfe7ab41111a99a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ca52bbf2edbe207348569dd2524c2da = $(`<div id="html_0ca52bbf2edbe207348569dd2524c2da" style="width: 100.0%; height: 100.0%;">Parigi: Madame de Staal-Delaunay, Simone Weil (7 volumi)</div>`)[0];
+                popup_1b515d643729c8df6bfe7ab41111a99a.setContent(html_0ca52bbf2edbe207348569dd2524c2da);
+            
+        
+
+        circle_marker_1d01ce45b2201af3e06baaa513e26f26.bindPopup(popup_1b515d643729c8df6bfe7ab41111a99a)
+        ;
+
+        
+    
+    
+            circle_marker_1d01ce45b2201af3e06baaa513e26f26.bindTooltip(
+                `<div>
+                     Parigi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d9a78053b18dd5d2076a7546f6ce6da = L.circleMarker(
+                [45.4338215, 28.0549395],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_62c7b372e42d345100cf203425e155bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a7fe243040e97444412352d3aea53ba = $(`<div id="html_7a7fe243040e97444412352d3aea53ba" style="width: 100.0%; height: 100.0%;">Galați: Nina Cassian (1 volumi)</div>`)[0];
+                popup_62c7b372e42d345100cf203425e155bf.setContent(html_7a7fe243040e97444412352d3aea53ba);
+            
+        
+
+        circle_marker_7d9a78053b18dd5d2076a7546f6ce6da.bindPopup(popup_62c7b372e42d345100cf203425e155bf)
+        ;
+
+        
+    
+    
+            circle_marker_7d9a78053b18dd5d2076a7546f6ce6da.bindTooltip(
+                `<div>
+                     Galați
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_684fb2251d740bf8612fe5bc7c9d5095 = L.circleMarker(
+                [59.9606739, 30.1586551],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_281ca4fb53026f2a5cabddc2558878f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d4f180371acac0b90b99558fe5d2599 = $(`<div id="html_7d4f180371acac0b90b99558fe5d2599" style="width: 100.0%; height: 100.0%;">San Pietroburgo: Misia Sert, Nina Berberova (4 volumi)</div>`)[0];
+                popup_281ca4fb53026f2a5cabddc2558878f8.setContent(html_7d4f180371acac0b90b99558fe5d2599);
+            
+        
+
+        circle_marker_684fb2251d740bf8612fe5bc7c9d5095.bindPopup(popup_281ca4fb53026f2a5cabddc2558878f8)
+        ;
+
+        
+    
+    
+            circle_marker_684fb2251d740bf8612fe5bc7c9d5095.bindTooltip(
+                `<div>
+                     San Pietroburgo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc19841a46714df0d4791f4e1bb266ac = L.circleMarker(
+                [44.4938203, 11.3426327],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_7b10b97838b4d903ff6b6ce2641441ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4afbe524978ba6c688d826fb43505ed7 = $(`<div id="html_4afbe524978ba6c688d826fb43505ed7" style="width: 100.0%; height: 100.0%;">Bologna: Cristina Campo (6 volumi)</div>`)[0];
+                popup_7b10b97838b4d903ff6b6ce2641441ff.setContent(html_4afbe524978ba6c688d826fb43505ed7);
+            
+        
+
+        circle_marker_fc19841a46714df0d4791f4e1bb266ac.bindPopup(popup_7b10b97838b4d903ff6b6ce2641441ff)
+        ;
+
+        
+    
+    
+            circle_marker_fc19841a46714df0d4791f4e1bb266ac.bindTooltip(
+                `<div>
+                     Bologna
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60a412aa5f345c4f63cf8158a5b60684 = L.circleMarker(
+                [52.2492751, 17.0901242],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_d7b5322e3ea3dc2d1ad2ec92b9fb5797 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae7f0e2527d960f741ceee4ae0087843 = $(`<div id="html_ae7f0e2527d960f741ceee4ae0087843" style="width: 100.0%; height: 100.0%;">Kórnik: Wisława Szymborska (3 volumi)</div>`)[0];
+                popup_d7b5322e3ea3dc2d1ad2ec92b9fb5797.setContent(html_ae7f0e2527d960f741ceee4ae0087843);
+            
+        
+
+        circle_marker_60a412aa5f345c4f63cf8158a5b60684.bindPopup(popup_d7b5322e3ea3dc2d1ad2ec92b9fb5797)
+        ;
+
+        
+    
+    
+            circle_marker_60a412aa5f345c4f63cf8158a5b60684.bindTooltip(
+                `<div>
+                     Kórnik
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_829b7c22c4459b7889c22e5c45ef3c01 = L.circleMarker(
+                [42.2625621, -71.8018877],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_25a1d1494336ff0fcdf06662628e4863 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d16c3a0290d8e876f0846459e8dc91b = $(`<div id="html_2d16c3a0290d8e876f0846459e8dc91b" style="width: 100.0%; height: 100.0%;">Worcester: Elizabeth Bishop (1 volumi)</div>`)[0];
+                popup_25a1d1494336ff0fcdf06662628e4863.setContent(html_2d16c3a0290d8e876f0846459e8dc91b);
+            
+        
+
+        circle_marker_829b7c22c4459b7889c22e5c45ef3c01.bindPopup(popup_25a1d1494336ff0fcdf06662628e4863)
+        ;
+
+        
+    
+    
+            circle_marker_829b7c22c4459b7889c22e5c45ef3c01.bindTooltip(
+                `<div>
+                     Worcester
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_28a6c5896985c714cf4ccbf955b8ee12 = L.circleMarker(
+                [41.8933203, 12.4829321],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_d3701c39b0493a3cd9d3b789e2206d0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7f1c245df09e0576dfb0b477b557593 = $(`<div id="html_d7f1c245df09e0576dfb0b477b557593" style="width: 100.0%; height: 100.0%;">Roma: Anna Maria Ortese (1 volumi)</div>`)[0];
+                popup_d3701c39b0493a3cd9d3b789e2206d0c.setContent(html_d7f1c245df09e0576dfb0b477b557593);
+            
+        
+
+        circle_marker_28a6c5896985c714cf4ccbf955b8ee12.bindPopup(popup_d3701c39b0493a3cd9d3b789e2206d0c)
+        ;
+
+        
+    
+    
+            circle_marker_28a6c5896985c714cf4ccbf955b8ee12.bindTooltip(
+                `<div>
+                     Roma
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_439bc2d0c7b34123950e2e7c89be25c5 = L.circleMarker(
+                [51.5968712, -0.3770142],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_97e46fef921ccdcdab168b44ee686ac2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a10797b7d3b088696518d436c0ba270 = $(`<div id="html_1a10797b7d3b088696518d436c0ba270" style="width: 100.0%; height: 100.0%;">Pinner: Ivy Compton-Burnett (1 volumi)</div>`)[0];
+                popup_97e46fef921ccdcdab168b44ee686ac2.setContent(html_1a10797b7d3b088696518d436c0ba270);
+            
+        
+
+        circle_marker_439bc2d0c7b34123950e2e7c89be25c5.bindPopup(popup_97e46fef921ccdcdab168b44ee686ac2)
+        ;
+
+        
+    
+    
+            circle_marker_439bc2d0c7b34123950e2e7c89be25c5.bindTooltip(
+                `<div>
+                     Pinner
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_547881f4cb3ba4dcda11a35fd0872e9a = L.circleMarker(
+                [42.3588336, -71.0578303],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_7f5ebbd4343a0f35150b88935ccaea49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91b150874e93fea78eebf00abcafb9cd = $(`<div id="html_91b150874e93fea78eebf00abcafb9cd" style="width: 100.0%; height: 100.0%;">Boston: Sylvia Plath (1 volumi)</div>`)[0];
+                popup_7f5ebbd4343a0f35150b88935ccaea49.setContent(html_91b150874e93fea78eebf00abcafb9cd);
+            
+        
+
+        circle_marker_547881f4cb3ba4dcda11a35fd0872e9a.bindPopup(popup_7f5ebbd4343a0f35150b88935ccaea49)
+        ;
+
+        
+    
+    
+            circle_marker_547881f4cb3ba4dcda11a35fd0872e9a.bindTooltip(
+                `<div>
+                     Boston
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5bed3cd0080f380624b7a26f11779c1b = L.circleMarker(
+                [40.6358599, 17.6884975],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_ce29a3362d807bf73884aaabc064f862 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_289e90ddb2dd1b8b53cde126558da9c2 = $(`<div id="html_289e90ddb2dd1b8b53cde126558da9c2" style="width: 100.0%; height: 100.0%;">Brindisi: Serena Vitale (1 volumi)</div>`)[0];
+                popup_ce29a3362d807bf73884aaabc064f862.setContent(html_289e90ddb2dd1b8b53cde126558da9c2);
+            
+        
+
+        circle_marker_5bed3cd0080f380624b7a26f11779c1b.bindPopup(popup_ce29a3362d807bf73884aaabc064f862)
+        ;
+
+        
+    
+    
+            circle_marker_5bed3cd0080f380624b7a26f11779c1b.bindTooltip(
+                `<div>
+                     Brindisi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5ee3e4a6105f254f2c4d4e2e636331e = L.circleMarker(
+                [38.5800713, -90.4069177],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_71e4edd37cb88519184dd6eedbd0fd3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8992e8585ef3fbfa0486963c1074db8 = $(`<div id="html_b8992e8585ef3fbfa0486963c1074db8" style="width: 100.0%; height: 100.0%;">Kirkwood: Marianne Moore (1 volumi)</div>`)[0];
+                popup_71e4edd37cb88519184dd6eedbd0fd3f.setContent(html_b8992e8585ef3fbfa0486963c1074db8);
+            
+        
+
+        circle_marker_f5ee3e4a6105f254f2c4d4e2e636331e.bindPopup(popup_71e4edd37cb88519184dd6eedbd0fd3f)
+        ;
+
+        
+    
+    
+            circle_marker_f5ee3e4a6105f254f2c4d4e2e636331e.bindTooltip(
+                `<div>
+                     Kirkwood
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c03d3538ad83e0e3e557708fbc935021 = L.circleMarker(
+                [55.8885195, 12.5303539],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_f51c90ac5c85481d24a360f9e753fbc5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09cd57f64019c0b73b3f2a3f909a7921 = $(`<div id="html_09cd57f64019c0b73b3f2a3f909a7921" style="width: 100.0%; height: 100.0%;">Rungsted: Karen Blixen (6 volumi)</div>`)[0];
+                popup_f51c90ac5c85481d24a360f9e753fbc5.setContent(html_09cd57f64019c0b73b3f2a3f909a7921);
+            
+        
+
+        circle_marker_c03d3538ad83e0e3e557708fbc935021.bindPopup(popup_f51c90ac5c85481d24a360f9e753fbc5)
+        ;
+
+        
+    
+    
+            circle_marker_c03d3538ad83e0e3e557708fbc935021.bindTooltip(
+                `<div>
+                     Rungsted
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3b997d99a3f86a44a88919c4c28948c = L.circleMarker(
+                [39.19, -78.16],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_bd04d126878c84b93746c8a699b6a289 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52245ac4eb64263232bcfd53dd32959c = $(`<div id="html_52245ac4eb64263232bcfd53dd32959c" style="width: 100.0%; height: 100.0%;">Winchester: Willa Cather (1 volumi)</div>`)[0];
+                popup_bd04d126878c84b93746c8a699b6a289.setContent(html_52245ac4eb64263232bcfd53dd32959c);
+            
+        
+
+        circle_marker_a3b997d99a3f86a44a88919c4c28948c.bindPopup(popup_bd04d126878c84b93746c8a699b6a289)
+        ;
+
+        
+    
+    
+            circle_marker_a3b997d99a3f86a44a88919c4c28948c.bindTooltip(
+                `<div>
+                     Winchester
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40acb9a7e00174e69b61050234ff8a51 = L.circleMarker(
+                [55.625578, 37.6063916],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_aafcb8a3cf4de097598711ae643c5f67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6bb8aeadca48c5fedbb99d0bdde08cba = $(`<div id="html_6bb8aeadca48c5fedbb99d0bdde08cba" style="width: 100.0%; height: 100.0%;">Mosca: Marina Cvetaeva (3 volumi)</div>`)[0];
+                popup_aafcb8a3cf4de097598711ae643c5f67.setContent(html_6bb8aeadca48c5fedbb99d0bdde08cba);
+            
+        
+
+        circle_marker_40acb9a7e00174e69b61050234ff8a51.bindPopup(popup_aafcb8a3cf4de097598711ae643c5f67)
+        ;
+
+        
+    
+    
+            circle_marker_40acb9a7e00174e69b61050234ff8a51.bindTooltip(
+                `<div>
+                     Mosca
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b3046fa6823b59cf80e7f554b2be94a3 = L.circleMarker(
+                [41.4448133, -74.0155219],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_2d1ca0643917a591a64aded4fa6b462a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fcb9c1c910524e3135d51e9717468bd7 = $(`<div id="html_fcb9c1c910524e3135d51e9717468bd7" style="width: 100.0%; height: 100.0%;">Cornwall-on-Hudson: Djuna Barnes (2 volumi)</div>`)[0];
+                popup_2d1ca0643917a591a64aded4fa6b462a.setContent(html_fcb9c1c910524e3135d51e9717468bd7);
+            
+        
+
+        circle_marker_b3046fa6823b59cf80e7f554b2be94a3.bindPopup(popup_2d1ca0643917a591a64aded4fa6b462a)
+        ;
+
+        
+    
+    
+            circle_marker_b3046fa6823b59cf80e7f554b2be94a3.bindTooltip(
+                `<div>
+                     Cornwall-on-Hudson
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac5d26b28fc00022e293cc11f67303e3 = L.circleMarker(
+                [47.6181326, 3.1975937],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_46c72facc77cc28add44f97d52d2a7d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51ccbfd8d8fb161316c7a4ed8b0e04c4 = $(`<div id="html_51ccbfd8d8fb161316c7a4ed8b0e04c4" style="width: 100.0%; height: 100.0%;">Saint-Sauveur-en-Puisaye: Colette (2 volumi)</div>`)[0];
+                popup_46c72facc77cc28add44f97d52d2a7d2.setContent(html_51ccbfd8d8fb161316c7a4ed8b0e04c4);
+            
+        
+
+        circle_marker_ac5d26b28fc00022e293cc11f67303e3.bindPopup(popup_46c72facc77cc28add44f97d52d2a7d2)
+        ;
+
+        
+    
+    
+            circle_marker_ac5d26b28fc00022e293cc11f67303e3.bindTooltip(
+                `<div>
+                     Saint-Sauveur-en-Puisaye
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f06cbd8277766e9895fd4f0f4f3df30d = L.circleMarker(
+                [40.8358846, 14.2487679],
+                {"bubblingMouseEvents": true, "color": "#b03a68", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e87ba4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 1.5}
+            ).addTo(map_6cfd0622dad775c3193f0efa31288e6c);
+        
+    
+        var popup_51f3dc0e7fdfcc099f5f2ca257d4b821 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76b170f2ba19b4235eb82cadac65e4c8 = $(`<div id="html_76b170f2ba19b4235eb82cadac65e4c8" style="width: 100.0%; height: 100.0%;">Napoli: Elena Croce (1 volumi)</div>`)[0];
+                popup_51f3dc0e7fdfcc099f5f2ca257d4b821.setContent(html_76b170f2ba19b4235eb82cadac65e4c8);
+            
+        
+
+        circle_marker_f06cbd8277766e9895fd4f0f4f3df30d.bindPopup(popup_51f3dc0e7fdfcc099f5f2ca257d4b821)
+        ;
+
+        
+    
+    
+            circle_marker_f06cbd8277766e9895fd4f0f4f3df30d.bindTooltip(
+                `<div>
+                     Napoli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

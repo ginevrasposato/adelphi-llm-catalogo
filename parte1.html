@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il catalogo della Biblioteca Adelphi</title>
+<style>
+body{font-family:-apple-system,Helvetica,Arial,sans-serif;margin:24px;color:#222;background:#fff}
+h1{color:#1f4e79;margin-bottom:4px}
+p.nota{color:#555;font-size:14px;max-width:900px}
+.filtri{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+input,select{padding:8px;font-size:14px;border:1px solid #bbb;border-radius:6px}
+input{min-width:280px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th{background:#1f4e79;color:#fff;text-align:left;padding:8px;cursor:pointer;position:sticky;top:0}
+td{padding:6px 8px;border-bottom:1px solid #ddd;vertical-align:top}
+tr:hover td{background:#eef4fa}
+a{color:#1f4e79}
+#cont{font-weight:bold;margin:8px 0}
+</style></head><body>
+<h1>Il catalogo della Biblioteca Adelphi</h1>
+<p class="nota">%%N%% volumi. Cerca per autore, titolo, genere o tema; clicca sul titolo per aprire la scheda su adelphi.it; clicca sulle intestazioni per ordinare. Genere e temi sono una classificazione automatica sperimentale (genere: accordo del 78% con la mia annotazione su 60 libri; temi: 94% pertinenti su 38 libri verificati). eBook = edizione eBook sul sito Adelphi.</p>
+<div class="filtri">
+<input id="cerca" placeholder="Cerca autore, titolo, tema...">
+<select id="gen"><option value="">Tutti i generi</option>%%OPZ%%</select>
+<select id="ebk"><option value="">eBook: tutti</option><option value="sì">Con eBook</option><option value="no">Senza eBook</option></select>
+</div>
+<div id="cont"></div>
+<table id="t"><thead><tr><th>N.</th><th>Autore</th><th>Titolo</th><th>Genere</th><th>Temi</th><th>Anno</th><th>eBook</th></tr></thead>
+<tbody>

@@ -1,0 +1,6 @@
+s = open("analizza_dati.py").read()
+s = s.replace('df_eta = df_eta[(df_eta["eta"] > 0) & (df_eta["eta"] < 110)]', 'df_eta = df_eta[df_eta["eta"] > 0]')
+s = s.replace("Eta' media dell'autore alla pubblicazione, per decennio", "Anni dalla nascita dell'autore all'edizione, media per decennio")
+s = s.replace("Eta' media", "Anni dalla nascita (media)")
+s = s.replace('fig.savefig("eta_per_decennio.png", dpi=150)', 'ax.set_ylim(0, 150)\n    fig.savefig("eta_per_decennio.png", dpi=150)')
+open("analizza_dati.py", "w").write(s)

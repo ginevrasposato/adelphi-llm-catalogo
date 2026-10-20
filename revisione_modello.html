@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="it"><meta charset="utf-8"><title>Revisione disaccordi</title>
+<style>
+body{font-family:sans-serif;max-width:800px;margin:20px auto;padding:0 12px}
+.l{border:1px solid #ccc;border-radius:8px;padding:12px;margin:12px 0}
+.l.ok{background:#eef8ee}
+.d{font-size:14px;color:#333;margin:6px 0}
+.ab{margin:8px 0;font-size:16px}
+select{font-size:16px;margin-top:8px}
+#barra{position:sticky;top:0;background:#fff;padding:8px;border-bottom:1px solid #ccc}
+</style>
+<div id="barra"><b id="cont"></b> <button onclick="scarica()">Scarica CSV</button></div>
+<div id="lista"></div>
+<script>
+const D=__DATI__, G=__GENERI__;
+let S={};
+try{S=JSON.parse(localStorage.getItem("rev")||"{}")}catch(e){}
+function salva(){try{localStorage.setItem("rev",JSON.stringify(S))}catch(e){}}
+function agg(){const n=Object.values(S).filter(x=>x).length;
+  document.getElementById("cont").textContent=n+" / "+D.length+" decisi"}
+const L=document.getElementById("lista");
+D.forEach(r=>{
+  const k=r.numero_collana;
+  const d=document.createElement("div");d.className="l";
+  d.innerHTML="<b>"+k+" · "+r.autore+" — "+r.titolo+"</b>"+
+    "<div class='ab'>Etichetta A: <b>"+r.A+"</b> &nbsp;|&nbsp; Etichetta B: <b>"+r.B+"</b></div>"+
+    "<div class='d'>"+(r.descrizione||"(nessuna descrizione)")+"</div>"+
+    "<a href='"+r.url_libro+"' target='_blank'>apri la pagina Adelphi</a><br>";
+  const s=document.createElement("select");
+  s.innerHTML="<option value=''>— genere finale —</option>"+G.map(g=>"<option>"+g+"</option>").join("");
+  s.value=S[k]||"";
+  if(s.value)d.classList.add("ok");
+  s.onchange=()=>{S[k]=s.value;d.classList.toggle("ok",!!s.value);salva();agg()};
+  d.appendChild(s);L.appendChild(d);
+});
+agg();
+function scarica(){
+  const q=v=>'"'+String(v==null?"":v).replace(/"/g,'""')+'"';
+  const c="numero_collana,genere_finale\n"+D.map(r=>r.numero_collana+","+q(S[r.numero_collana]||"")).join("\n");
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([c],{type:"text/csv"}));
+  a.download="campione_rivisto.csv";a.click();
+}
+</script></html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Biblioteca Adelphi: un piccolo dossier</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+       max-width: 800px; margin: 2em auto; padding: 0 1em; line-height: 1.6; color: #222; }
+h1 { color: #b03a68; }
+h2 { color: #b03a68; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; margin-top: 2em; }
+img { max-width: 100%; border: 1px solid #ccc; margin: 1em 0; }
+.didascalia { font-size: 0.9em; color: #555; margin-top: -0.5em; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+th, td { border: 1px solid #ccc; padding: 0.5em; text-align: left; }
+th { background: #fbe9f0; }
+a { color: #b03a68; }
+.limiti li { margin-bottom: 0.4em; }
+</style>
+</head>
+<body>
+
+<h1>Alla ricerca del libro perduto</h1>
+<p><em>Interrogare un catalogo, analizzarne la biblioteca ed esplorare il mondo Adelphi
+con modelli generativi.</em></p>
+<p>Questa pagina raccoglie le analisi sulla Biblioteca Adelphi. I dati sono stati raccolti
+da adelphi.it con uno scraping automatico e arricchiti con Wikipedia (biografie degli autori)
+e con un modello linguistico (genere letterario e temi di ogni volume). Lo scopo pratico
+è aiutare a orientarsi in un catalogo e a trovare dove procurarsi le opere.</p>
+
+<h2>Numeri</h2>
+<table>
+<tr><th>Volumi nel catalogo</th><td>792</td></tr>
+<tr><th>Periodo (anno dell'edizione Adelphi)</th><td>1965-2026</td></tr>
+<tr><th>Autori distinti</th><td>275</td></tr>
+<tr><th>Volumi anche in eBook</th><td>544 (69%)</td></tr>
+<tr><th>Volumi di autrici (genere noto)</th><td>64 su 694 (9.2%)</td></tr>
+<tr><th>Autrici distinte</th><td>23</td></tr>
+<tr><th>Curatrici e traduttrici (crediti classificati)</th><td>418 su 784 (53%)</td></tr>
+<tr><th>Città di nascita più rappresentata</th><td>Liegi (66 volumi)</td></tr>
+<tr><th>Schede qualitative (LLM)</th><td>792</td></tr>
+</table>
+
+<h2>Il catalogo</h2>
+<img src="generi.png" alt="Generi letterari più rappresentati (etichette prodotte dal modello).">
+<p class="didascalia">Generi letterari più rappresentati (etichette prodotte dal modello).</p>
+<img src="generi_per_decennio.png" alt="Generi letterari per decennio di edizione.">
+<p class="didascalia">Generi letterari per decennio di edizione.</p>
+<img src="classici_contemporanei.png" alt="Epoca di nascita degli autori: classici e contemporanei.">
+<p class="didascalia">Epoca di nascita degli autori: classici e contemporanei.</p>
+<img src="formati.png" alt="Volumi disponibili anche in eBook, secondo l'edizione Adelphi.">
+<p class="didascalia">Volumi disponibili anche in eBook, secondo l'edizione Adelphi.</p>
+
+<h2>La presenza femminile</h2>
+<p>Le donne sono poche tra chi scrive, ma più della metà tra chi traduce e cura. Tra gli autori
+nati più tardi la quota di donne cresce, ma il catalogo Adelphi, guardando agli anni di
+pubblicazione, non registra questa crescita: Adelphi attinge molto ai classici consacrati,
+in maggioranza uomini (è un'ipotesi, non un risultato).</p>
+<img src="presenza_femminile.png" alt="Presenza femminile per decennio: autrici e curatrici/traduttrici.">
+<p class="didascalia">Presenza femminile per decennio: autrici e curatrici/traduttrici.</p>
+<img src="autrici_epoche.png" alt="Quota di autrici per epoca di nascita (autori distinti).">
+<p class="didascalia">Quota di autrici per epoca di nascita (autori distinti).</p>
+<img src="generi_donne.png" alt="Generi letterari: autrici e autori a confronto.">
+<p class="didascalia">Generi letterari: autrici e autori a confronto.</p>
+<img src="chi_traduce_chi.png" alt="Chi traduce e cura: le autrici sono affidate più spesso a traduttrici.">
+<p class="didascalia">Chi traduce e cura: le autrici sono affidate più spesso a traduttrici.</p>
+
+<h2>Mappe</h2>
+<ul>
+<li><a href="mappa_nascite.html" target="_blank">Luoghi di nascita degli autori</a> (mappa interattiva)</li>
+<li><a href="mappa_autrici.html" target="_blank">Luoghi di nascita delle autrici</a> (mappa interattiva)</li>
+</ul>
+
+<h2>Percorso al femminile</h2>
+<p>Elenco di tutti i volumi di autrici, con link alla scheda su adelphi.it:
+<a href="percorso_autrici.html" target="_blank">percorso_autrici.html</a>.</p>
+
+<h2>Metodo e limiti</h2>
+<ul class="limiti">
+<li>Genere e luogo di nascita degli autori vengono da Wikipedia: gli autori senza voce sono esclusi
+(199 autori su 275 hanno dati biografici).</li>
+<li>Genere letterario e temi sono prodotti da un modello linguistico; in un controllo a campione
+il genere era corretto nel 67% dei casi e i temi nel 93%.</li>
+<li>Il genere dei curatori è dedotto dal nome di battesimo, in modo binario; 26 crediti su 810
+non sono classificabili.</li>
+<li>L'anno è quello dell'edizione Adelphi, non della prima pubblicazione dell'opera.</li>
+<li>La disponibilità eBook riflette l'edizione Adelphi al momento della raccolta (ottobre 2026).</li>
+<li>Nessun autore nato dopo il 1945 ha dati biografici: i contemporanei sono sotto-rappresentati.</li>
+<li>Numeri piccoli (per esempio 79 volumi di autrici) rendono incerte le differenze di pochi punti.</li>
+</ul>
+
+<hr>
+<p style="font-size: 0.85em; color: #777;">
+Generato automaticamente dallo script <code>componi_report.py</code>.
+I dati sono stati raccolti per finalità didattiche e potrebbero contenere imprecisioni.
+La verifica e l'interpretazione dei risultati restano responsabilità del lettore.
+</p>
+
+</body>
+</html>

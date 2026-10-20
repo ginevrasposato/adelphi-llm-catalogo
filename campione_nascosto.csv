@@ -1,0 +1,61 @@
+numero_collana,genere_letterario,temi,affidabilita_scheda
+4,biografia/memorie,viaggio di Artaud in Messico tra i Tarahumara; il rituale del peyote; critica della civiltà occidentale,media
+10,biografia/memorie,la conversione religiosa del 1521; un'esistenza divisa tra un prima e un dopo; la giovinezza mondana di Ignazio prima della svolta,alta
+15,scienze,il comportamento animale studiato dall'etologia; la comunicazione e il linguaggio tra animali; l'osservazione paziente degli animali nel loro ambiente; il rapporto tra uomo e animali,alta
+35,teatro,la prima viennese del Vaso di Pandora nel 1905; censura e controllo del pubblico teatrale; lo scandalo come nascita del teatro moderno; la figura di Lulu e la sessualità femminile,media
+37,altro,le prose meno note di Sergio Solmi; l'unità dell'opera dello scrittore tra poesia e saggistica; il rapporto tra poesia e critica letteraria,media
+40,religione/spiritualita,la preghiera esicastica (la preghiera di Gesù); la vita errante di uno strannik nella Russia contadina; la ricerca religiosa solitaria come abbandono del mondo,alta
+42,romanzo,la crisi nervosa e visionaria di Parigi nel 1895; l'esperienza dell'occulto e della ricerca alchemica; la lotta religiosa con Dio,media
+44,filosofia,la scrittura automatica della moglie e le comunicazioni dall'ignoto; il sistema dei cicli storici e delle fasi lunari; la dottrina esoterica sull'anima e sul destino umano,alta
+74,romanzo,religione e divinità arbitrarie; solitudine e visione eccentrica di un uomo comune; immaginario rurale inglese,media
+78,teatro,rielaborazione della Vita è sogno di Calderón; il confine tra sogno e realtà; contrasto tra maschere veneziane e cerimoniale spagnolo,alta
+94,racconti,la scrittura durante l'occupazione tedesca della Danimarca; la clandestinità di un manoscritto verso l'ambasciata inglese a Stoccolma; il successo internazionale di un'autrice già affermata,media
+100,saggio,l'amicizia e le parole di simpatia rivolte agli amici; il rapporto con Goethe e il progetto del Divano occidentale-orientale; la tradizione del libro come raccolta di pensieri personali,media
+110,religione/spiritualita,vocazione profetica di Isaia; purificazione dalla colpa e dal peccato; chiamata di Dio al profeta,media
+116,saggio,l'attrazione della massa come fenomeno quasi gravitazionale; il rapporto tra massa e potere; l'esperienza diretta della folla nella Vienna del 1927,alta
+118,filosofia,quaderni di riflessione scritti durante la guerra (1941-1942); pensiero filosofico e mistico; rapporto tra fede e ragione,media
+127,poesia,la storia del Novecento europeo e la sua violenza; esilio e memoria della Polonia e della Lituania; la condizione dell'uomo di fronte all'oppressione totalitaria; interrogativi religiosi e metafisici,bassa
+162,poesia,l'amore che conduce alla follia; due amanti separati dal destino; la passione che consuma senza estinguersi,media
+174,saggio,casi clinici di disturbi neurologici; rapporto tra malattia e identità personale; medicina come incontro con le persone,media
+186,altro,appunti e riflessioni annotati negli anni 1972-1985; il rapporto tra l'opera pubblica e l'opera nascosta dell'autore; continuità con La provincia dell'uomo,media
+187,scienze,l'epidemia di encefalite letargica del 1917-1927; la sopravvivenza in un torpore prolungato fino al 1969; il risveglio dei pazienti dopo decenni di immobilita'; la condizione dei malati cronici e il rapporto con il medico,alta
+206,racconti,il pensiero regale e la visione gerarchica del mondo; il simbolismo emblematico di aquile e potere; la figura del re come voce narrante,media
+211,poesia,"saggezza mondana; amore e desiderio; rinuncia e distacco dal mondo; ritratti di sovrani, mercanti e mendicanti",alta
+213,filosofia,legalismo e governo dello Stato; la legge come strumento di potere; la riforma amministrativa nella Cina antica; il rifiuto dei valori confuciani,media
+237,biografia/memorie,l'incidente di montagna in Norvegia e le sue conseguenze; una gamba percepita come estranea al proprio corpo; disturbi neurologici della percezione corporea; l'indagine di un medico sulla propria esperienza di malattia,alta
+245,filosofia,i trigrammi e gli esagrammi come segni della vita; divinazione e lettura del mutamento; la leggenda del guscio di tartaruga e l'origine dei segni; il rapporto tra segno e realtà nella tradizione cinese,media
+258,storia,storia dei teatri napoletani; revisione dell'opera giovanile da parte dell'autore; vita teatrale e spettacolo a Napoli,alta
+273,teatro,amore tra un re e una fanciulla dell'eremitaggio; memoria perduta e riconoscimento tra amanti; maledizione e dimenticanza; rapporto tra mondo degli eremiti e corte,media
+299,religione/spiritualita,la profezia di Malachia e l'ultimo papa; il mancato compimento della promessa di salvezza; il presentimento della fine della storia; il mistero del male nella Chiesa,alta
+325,religione/spiritualita,il nome segreto del Progenitore Prajapati; l'origine dei trentatré dèi e degli uomini; il rapporto tra dèi e uomini nei Veda; la mitologia indiana,alta
+358,romanzo,amicizia e tradimento; memoria e rancore; solitudine dell'uomo borghese,bassa
+413,romanzo,eredità e colpa familiare nel Sud degli Stati Uniti; schiavitù e questione razziale nel Mississippi; ambizione e declino di un proprietario terriero; il passato ricostruito attraverso voci diverse,bassa
+419,religione/spiritualita,"le lamine d'oro orfiche nelle sepolture; l'itinerario dell'anima nell'oltretomba; istruzioni funerarie della Magna Grecia, di Creta e della Tessaglia",alta
+423,storia,adulterio e condizione femminile nella Cina del Seicento; legislazione penale imperiale e processi giudiziari; vita popolare lungo le strade della Cina del Seicento,alta
+429,saggio,natura della letteratura come mistero mutevole; rapporto dello scrittore con la propria arte; sprezzatura e gusto della dichiarazione paradossale; riflessione critica sul mestiere letterario,media
+453,racconti,incontro con il proprio doppio giovanile; identità personale e memoria del passato; infinito e libro senza fine; tempo e ritorno alle origini,alta
+456,altro,l'essenzialità della parola; linguaggio politicizzato e parole difficili; il sillabario come monito e richiamo semplice,media
+459,poesia,la morte vista nella malattia e nell'abbandono; l'amore e i legami tra le persone; la storia tragica e le sue ferite individuali; la vita nei dettagli minimi e quotidiani,alta
+468,altro,avanguardia francese degli anni Venti; ricerca spirituale e misticismo; rifiuto dei valori della cultura occidentale; rapporto tra arte e assoluto,media
+476,biografia/memorie,l'esilio e la memoria di un'Europa perduta; il dopoguerra ungherese e i suoi anni atroci; il ricordo come album di immagini sbiadite,alta
+480,teatro,la natura del potere e la sua legittimità; vicende dinastiche della Moscovia dei secoli XVI e XVII; Boris Godunov e la successione al trono,alta
+502,saggio,creature immaginarie nelle mitologie e nelle letterature; bestiario fantastico e repertorio di esseri sognati dagli uomini; la fenice come immagine dell'universo; il demone della simmetria nell'arte e nelle forme ornamentali,alta
+511,romanzo,sosta di un professore in viaggio verso la Grecia; appuntamento segreto e desiderio nella Ragusa degli anni Trenta; seduzione e passato sentimentale nei personaggi di Márai,media
+573,racconti,la rinuncia alla poesia nella prosa; il timore dell'eccesso espressivo; la morte evocata dal titolo,bassa
+577,storia,la guerra italo-etiopica nel contesto della crisi del 1935; l'Abissinia sconosciuta all'opinione pubblica occidentale; Hailé Selassie e la Società delle Nazioni; il ruolo dei media e della propaganda nel costruire un despota,alta
+578,racconti,la Lombardia borghese e provinciale; il rapporto tra letteratura e realtà quotidiana; il fascismo e il dopoguerra italiano,media
+581,scienze,"perdita della capacità di leggere la musica dopo una lesione cerebrale; alterazioni della percezione visiva da patologie neurologiche; adattamento di pazienti con disturbi della vista e del riconoscimento; rapporto tra cervello, percezione e identità",alta
+584,poesia,la concezione della poesia; il rapporto tra poesia e prosa; la riflessione sulla tradizione letteraria; il poema come commento critico alla propria scrittura,alta
+635,storia,la guerra sul fronte orientale (1941-1945); il resoconto del testimone di guerra; l'Europa orientale devastata dal conflitto,alta
+648,biografia/memorie,ritratto di Guido Ceronetti come figura intellettuale; la cultura italiana vista attraverso un suo protagonista; devozione popolare e sacro (suggerito dal titolo),media
+685,romanzo,relazioni coniugali; vita di provincia francese; colpa e segreti familiari,bassa
+690,romanzo,indagine poliziesca senza soluzione; Roma borghese durante il fascismo; il rapporto tra ordine e caos nella società,bassa
+727,scienze,comportamento degli insetti osservato sul campo; il microcosmo ignorato sotto i nostri piedi; l'osservazione naturalistica come esplorazione,media
+739,teatro,il peso del passato e della colpa; la memoria storica del Sud americano; l'espiazione e la possibilità di redenzione,bassa
+752,poesia,l'io lirico senza patria; condizione di esilio e di frontiera; ambivalenza dell'identità; il viaggio perpetuo tra le coste,media
+757,storia,cronaca della seconda guerra mondiale sul fronte sovietico; il popolo sovietico durante la guerra; testimonianze dirette dal fronte orientale,media
+764,filosofia,il pessimismo esistenziale; la critica della fiducia nel progresso; la lucidità di fronte alla decadenza,bassa
+768,racconti,la borghesia e le sue ipocrisie; l'esilio e la condizione di straniera; la psicologia dei personaggi femminili,media
+772,altro,crisi delle certezze; incertezza sulla realtà; il quotidiano osservato attraverso il paradosso,media
+782,scienze,osservazione del comportamento degli insetti; istinto animale nella natura; vita naturale in Provenza,bassa
+791,racconti,ipocrisia e grettezza della borghesia; esilio e sradicamento; guerra e occupazione,bassa

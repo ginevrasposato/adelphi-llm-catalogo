@@ -1,0 +1,30 @@
+</tbody></table>
+<script>
+var tb=document.querySelector('#t tbody');
+var rows=Array.from(tb.querySelectorAll('tr'));
+var cerca=document.getElementById('cerca'),gen=document.getElementById('gen'),ebk=document.getElementById('ebk'),cont=document.getElementById('cont');
+function filtra(){
+  var q=cerca.value.toLowerCase().trim(),g=gen.value,e=ebk.value,n=0;
+  rows.forEach(function(r){
+    var ok=(!q||r.dataset.txt.indexOf(q)>-1)&&(!g||r.dataset.g===g)&&(!e||r.dataset.e===e);
+    r.style.display=ok?'':'none'; if(ok)n++;
+  });
+  cont.textContent=n+' volumi su '+rows.length;
+}
+[cerca,gen,ebk].forEach(function(el){el.addEventListener('input',filtra);});
+var dir={};
+document.querySelectorAll('#t th').forEach(function(th,i){
+  th.addEventListener('click',function(){
+    dir[i]=!dir[i];
+    var num=(i===0||i===5);
+    rows.sort(function(a,b){
+      var x=a.children[i],y=b.children[i],vx,vy;
+      if(num){vx=parseFloat(x.dataset.s);vy=parseFloat(y.dataset.s);return dir[i]?vx-vy:vy-vx;}
+      vx=x.textContent.toLowerCase();vy=y.textContent.toLowerCase();
+      return dir[i]?vx.localeCompare(vy,'it'):vy.localeCompare(vx,'it');
+    });
+    rows.forEach(function(r){tb.appendChild(r);});
+  });
+});
+filtra();
+</script></body></html>

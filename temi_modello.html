@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="it"><meta charset="utf-8"><title>Giudizio sui temi</title>
+<style>
+body{font-family:sans-serif;max-width:800px;margin:20px auto;padding:0 12px}
+.l{border:1px solid #ccc;border-radius:8px;padding:12px;margin:12px 0}
+.l.ok{background:#eef8ee}
+.d{font-size:14px;color:#333;margin:6px 0}
+.t{margin:8px 0;padding:6px;border-top:1px solid #eee}
+select{font-size:15px;margin-left:8px}
+#barra{position:sticky;top:0;background:#fff;padding:8px;border-bottom:1px solid #ccc}
+</style>
+<div id="barra"><b id="cont"></b> <button onclick="scarica()">Scarica CSV</button></div>
+<p>Per ogni tema: <b>pertinente</b> se descrive davvero il libro, <b>non pertinente</b> altrimenti. Nei casi dubbi apri la scheda Adelphi.</p>
+<div id="lista"></div>
+<script>
+const D=__DATI__;
+let S={};
+try{S=JSON.parse(localStorage.getItem("tem")||"{}")}catch(e){}
+function salva(){try{localStorage.setItem("tem",JSON.stringify(S))}catch(e){}}
+const TOT=D.reduce((a,r)=>a+r.items.length,0);
+function agg(){const n=Object.values(S).filter(x=>x).length;
+  document.getElementById("cont").textContent=n+" / "+TOT+" temi giudicati"}
+function chk(card,r){card.classList.toggle("ok",r.items.every((x,i)=>S[r.numero_collana+"|"+i]))}
+const L=document.getElementById("lista");
+D.forEach(r=>{
+  const card=document.createElement("div");card.className="l";
+  card.innerHTML="<b>"+r.numero_collana+" · "+r.autore+" — "+r.titolo+"</b>"+
+    "<div class='d'>"+(r.descrizione||"(nessuna descrizione)")+"</div>"+
+    "<a href='"+r.url_libro+"' target='_blank'>apri la pagina Adelphi</a>";
+  r.items.forEach((x,i)=>{
+    const k=r.numero_collana+"|"+i;
+    const row=document.createElement("div");row.className="t";
+    row.appendChild(document.createTextNode(x.t));
+    const s=document.createElement("select");
+    s.innerHTML="<option value=''>—</option><option value='s'>pertinente</option><option value='n'>non pertinente</option>";
+    s.value=S[k]||"";
+    s.onchange=()=>{S[k]=s.value;salva();agg();chk(card,r)};
+    row.appendChild(s);card.appendChild(row);
+  });
+  chk(card,r);L.appendChild(card);
+});
+agg();
+function scarica(){
+  const q=v=>'"'+String(v==null?"":v).replace(/"/g,'""')+'"';
+  const g={s:"pertinente",n:"non pertinente"};
+  const righe=[];
+  D.forEach(r=>r.items.forEach((x,i)=>righe.push(
+    r.numero_collana+","+q(x.t)+","+x.e+","+q(g[S[r.numero_collana+"|"+i]]||""))));
+  const c="numero_collana,tema,esca,giudizio\n"+righe.join("\n");
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([c],{type:"text/csv"}));
+  a.download="temi_giudicati.csv";a.click();
+}
+</script></html>

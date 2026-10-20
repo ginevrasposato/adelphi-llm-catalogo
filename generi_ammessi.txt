@@ -1,0 +1,11 @@
+altro
+biografia/memorie
+filosofia
+poesia
+racconti
+religione/spiritualita
+romanzo
+saggio
+scienze
+storia
+teatro

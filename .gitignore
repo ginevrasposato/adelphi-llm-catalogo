@@ -1,0 +1,13 @@
+.env
+config.json
+.venv/
+__pycache__/
+.DS_Store
+descrizioni_adelphi.csv
+campione_da_annotare.csv
+annotazione.html
+revisione.html
+temi.html
+Loghi-0.jpg
+Screenshot*.png
+per esame/
