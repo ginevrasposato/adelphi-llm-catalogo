@@ -29,7 +29,7 @@ Osservazione aggiuntiva, non parte di H2: i libri di autrici sono curati e trado
 
 - **792 volumi** della Biblioteca Adelphi (1965–2026), raccolti con scraping dal sito adelphi.it (`scraper_adelphi.py`, `scraper_descrizioni.py`).
 - **275 autori** arricchiti con informazioni biografiche da Wikipedia (`arricchisci_autori.py`): genere, nazionalità, date e luoghi di nascita e morte. Il genere di curatori e traduttori è dedotto dal nome.
-- Dati mancanti: genere dell'autore noto per 694 volumi su 792; anno di edizione e data di nascita per 658; luogo di nascita per 199 autori su 275.
+- Dati mancanti: genere dell'autore noto per 694 volumi su 792; anno di edizione e data di nascita per 658; dati biografici da Wikipedia per 199 autori su 275 (quelli con una voce).
 - Gli errori trovati nei dati (età, nazionalità, genere di alcuni autori) sono stati corretti con gli script nella cartella `archivio/`. I file `autori_arricchiti_vecchio.json` e `cache_prima.json` conservano lo stato precedente alle correzioni.
 - **Le descrizioni dei volumi (`descrizioni_adelphi.csv`) non sono incluse**, perché sono testi dell'editore. Per ricostruirle si usa `scraper_descrizioni.py`. Sono escluse, per lo stesso motivo, le pagine di annotazione che le contengono (`annotazione.html`, `revisione.html`, `temi.html`, `campione_da_annotare.csv`): si rigenerano con gli script `crea_*`.
 
@@ -87,6 +87,7 @@ Script: `classifica_libri.py`. Schema: `schema_classificazione.png`.
 - H2 e H3 sono esplorative.
 - Il genere di curatori e traduttori è dedotto dal nome.
 - Dati mancanti (vedi sezione Dati).
+- Nessun autore nato dopo il 1945 ha dati biografici: i contemporanei sono sotto-rappresentati. Per H3 significa che nei decenni recenti la distanza è calcolata solo su autori nati fino al 1945, e questo potrebbe sovrastimare la crescita.
 - Genere e temi sono una classificazione automatica sperimentale.
 
 ## Uso dell'IA
