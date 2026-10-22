@@ -85,7 +85,7 @@ Script: `classifica_libri.py`. Schema: `schema_classificazione.png`.
 - Il 18% dei temi-esca è stato accettato come pertinente: "pertinente" non vuol dire "specifico", e il 94% è un limite superiore.
 - La soglia severa per H1 è stata aggiunta dopo aver visto i risultati.
 - H2 e H3 sono esplorative.
-- Il genere di curatori e traduttori è dedotto dal nome.
+- Il genere è una classificazione binaria ricavata da fonti indirette: per gli autori dall'incipit della voce di Wikipedia ("è stato" / "è stata"), per curatori e traduttori dal nome di battesimo (liste di nomi maschili e femminili; 26 crediti su 810 non classificabili sono esclusi dal calcolo). Sono possibili errori, e non rappresenta l'identità di genere delle persone.
 - Dati mancanti (vedi sezione Dati).
 - Nessun autore nato dopo il 1945 ha dati biografici: i contemporanei sono sotto-rappresentati. Per H3 significa che nei decenni recenti la distanza è calcolata solo su autori nati fino al 1945, e questo potrebbe sovrastimare la crescita.
 - Genere e temi sono una classificazione automatica sperimentale.
